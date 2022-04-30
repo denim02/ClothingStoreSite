@@ -1,0 +1,224 @@
+/* File Name: store.css */
+/* Programmed by Deni Mastori */
+
+/*------Layout------
+--------------------*/
+/* max-width being considered for the site is 1440px */
+
+/* Clothes Article Section */
+section#clothes-article-section {
+    padding: 1.25em 0;
+}
+
+section#clothes-article-section  a:not(:last-child) {
+    margin-right: 2.6em;
+}
+
+div#category-selection {
+    margin: 0 10%;
+}
+
+/* Showcase Section */
+section#showcase-section .tab {
+    display: none;
+    /* Will have display: flex when visible */
+    margin: 0 10%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#showcase-section .product-container {
+    width: 31%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section#showcase-section .product-description {
+    margin-top: 0;
+    padding: 1em;
+}
+
+section#showcase-section .product-description > h2 {
+    margin: 0;
+}
+
+section#showcase-section .product-description > h3 {
+    margin: 0;
+}
+
+section#showcase-section .product-color-container{
+    width: 65.5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#showcase-section .product-color-container > .product-container{
+    min-width: 47%;
+    margin: 0;
+}
+
+section#showcase-section .color-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;            
+}
+
+section#showcase-section .product-color-container > .color-container {
+    margin-left: 5%;             
+}
+
+section#showcase-section .product-color-container > .color-container > .color {
+    width: 44%;
+    margin-bottom: 2em;
+}
+
+section#showcase-section .color > h2 {
+    margin: 0;
+    padding: 0 0.2em;
+}
+
+section#showcase-section .large-showcase-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+section#showcase-section .large-showcase-container > img {
+    width: 43%;
+}
+
+section#showcase-section .large-showcase-container > .showcase-description {
+    width: 53%;
+}
+
+section#showcase-section .large-showcase-container > .showcase-description .color {
+    width: 24.7%;
+}
+
+section#showcase-section .large-showcase-container .product-description {
+    margin-top: 2em;
+}
+
+
+/*----Design and Typography ----
+------------------------------*/
+
+/* Clothes Article Section */
+.clothes-article-selection-bg {
+    background-color: #4E5854;
+}
+
+section#clothes-article-section {
+    background-color: #4E5854;
+}
+
+section#clothes-article-section a {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    position: relative;  /* Used for moving underline animation */
+}
+
+section#clothes-article-section a::before {
+    background-color: white;
+}
+
+section#clothes-article-section a.current-choice {
+    border-bottom: 1px solid white;
+}
+
+section#clothes-article-section a.current-choice:hover {
+    border-bottom: none;
+}
+
+/* Showcase Section */
+.clothes-showcase-bg {
+    background-color: #F4F4F4;
+}
+
+section#showcase-section .product-description {
+    background-color: #E3DFDF;
+}
+
+.opacity-change {
+    transition: opacity 1s;
+}
+
+.active {
+    border-bottom: 1px solid black;
+}
+
+section#showcase-section .large-showcase-container .product-description {
+    background-color: #C4C4C4;
+}
+
+section#showcase-section .product-description > h3 {
+    font-weight: 300;
+}
+
+section#showcase-section .product-description > p {
+    font-size: 1.1rem;
+}
+
+section#showcase-section .color > h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/*---- Responsive Design ------
+------------------------------*/
+@media (max-width: 1230px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    header h1, header div#gender-choice {
+        margin: 0.5em 0;
+        padding: 0;
+    }
+
+    header h2 {
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 890px) {
+    html {
+        font-size: 12px;
+    }
+
+    div#category-selection {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    section#clothes-article-section a {
+        padding: 0;
+        margin: 0;
+    }
+
+    section#showcase-section .product-container {
+        width: 50%;
+    }
+
+    section#showcase-section .tab, section#showcase-section .large-showcase-container {
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    section#showcase-section .large-showcase-container img {
+        margin-bottom: 2em;
+    }
+}

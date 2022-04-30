@@ -1,0 +1,264 @@
+/* File Name: general.css */
+/* Programmed by Deni Mastori */
+
+/*------Layout------
+--------------------*/
+/* max-width being considered for the site is 1440px */
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.max-w {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header > h1 {
+    margin-left: 10%;
+}
+
+header > div#gender-choice > a {
+    padding: 0.4em;
+}
+
+header > div#gender-choice > a:nth-child(2) {
+    margin-left: 1.6em;
+}
+
+header > h2 {
+    margin: 0 10% 0 25%;
+}
+
+/* Footer */
+footer {
+    padding: 0.1em 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 10%;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer div#nav-section {
+    margin-left: 10%;
+    padding: 0;
+}
+
+                             /* The CSS styling for the footer newsletter form is */
+footer form {             /* included here as it is required for the Store and About Us pages. */
+    margin-right: 5%;
+    width: 60%;
+}
+
+footer label {
+    width: 12.25em;
+    display: block;
+}
+
+footer input[type = "email"] {
+    margin-top: 0.75em;
+    width: 21.25em;
+    float: left;
+}
+
+footer  input[type = "submit"] {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    padding: 0.25em 0.5em;
+}
+
+
+/*----Design and Typography ----
+------------------------------*/
+
+/* General */
+body {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Animated underline when hovering over anchor links */
+.moving-underline::before {
+    content: '';                /* An empty pseudo-element is added before the containing element */
+    width: 100%;
+    height: 2px;                /* A height of 2px is specified for this pseudo-element */
+    transform-origin: right;
+    transform: scaleX(0);
+    /* It is naturally scaled to 0 using its right side as a transition center, so the underline flows back to the right 
+    after hovering over it. */
+    transition: transform .4s ease-in-out;
+    position: absolute;         /* This pseudo-element is placed at the bottom-left of the containing element */
+    bottom: 0;
+    left: 0;
+    /* Must specify background-color in any element using this class */
+}
+
+.moving-underline:hover::before {       
+    /* When hovering over the pseudo-element, it is gradually (due to the transition property)
+    scaled to its full width starting from the left, and flowing back to the right when unhovered. */
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Header */
+.header-bg {
+    background-color: #E7DAC8;
+}
+
+header {
+    background-color: #E7DAC8;
+    color: black;
+    letter-spacing: 0.125rem;
+}
+
+header > h1 {
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+header > div#gender-choice {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+header > div#gender-choice > a {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #1C3434;      
+    /* Inset is used to specify that the box-shadow is being created within the element itself, 
+    and not outside. */
+    transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+header > div#gender-choice > a.current-choice {
+    border-bottom: 2px solid black;
+}
+
+header > div#gender-choice > a:hover {
+    /* Inset is used to specify that the box-shadow is being created within the element itself, 
+    and not outside. */
+    box-shadow: inset 150px 0 0 0 #1C3434;
+    color: white;
+}
+
+header > h2 > a {
+    color: black;
+    text-decoration: none;
+    position: relative;  /* Used for moving underline animation */
+}
+
+header > h2 > a::before {
+    background-color: black;
+}
+
+/* Footer */
+.footer-bg {
+    background-color: #4E5854;  
+}
+
+footer {
+    background-color: #4E5854;
+}
+
+footer  h2 {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+footer  nav > ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    position: relative;  /* Used for moving underline animation */
+}
+
+footer a::before {
+    background-color: white;
+}
+
+footer label {
+    font-size: 2.25rem;
+    color: white;
+    font-weight: 300;
+}
+
+footer input[type = "email"] {
+    font-size: 1.3rem;
+}
+
+footer  input[type = "submit"] {
+    border: none;
+    color: white;
+    background-color: #1F3535;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+footer input[type = "submit"]:hover {
+    background-color: black;
+}
+
+
+/*---- Responsive Design ------
+------------------------------*/
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    header h1, header h2, header div#gender-choice {
+        margin: 0.5em 0;
+        padding: 0;
+    }
+
+    header div#gender-choice {
+        margin-bottom: 1em;
+    }
+}

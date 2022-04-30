@@ -1,0 +1,243 @@
+/* File Name: index.css */
+/* Programmed by Deni Mastori */
+
+/*------Layout------
+--------------------*/
+/* max-width being considered for the site is 1440px */
+
+/* Welcome Section */
+section#welcome-section {
+    padding: 2em 0 4em 0;
+}
+
+section#welcome-section > h1 {
+    margin-bottom: 0;
+    margin-left: 10%;
+    width: 4.5em;
+}
+
+section#welcome-section > h2 {
+    margin-top: 1em;
+    margin-left: 10%;
+    width: 8em;
+}
+
+section#welcome-section > img {
+    margin-left: 15%;
+}
+
+section#welcome-section > a {
+    padding: 0.2em;
+    margin-left: 2%;
+}
+
+/* About Section */
+section#about-section {
+    padding: 3em 0 4em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#about-section > div#about-text {
+    margin-left: 10%;
+    width: 40%;
+    padding: 1.75em 2em;
+}
+
+section#about-section > img {
+    margin-right: 10%;
+}
+
+/* Newsletter Section */
+section#newsletter-section {
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#newsletter-section > h2 {
+    margin-left: 10%;
+    width: 40%;
+    padding: 1em;
+}
+
+section#newsletter-section > form {
+    margin-top: 2em;
+    margin-right: 10%;
+    width: 35%;
+    padding: 1em 0 0 0;
+}
+
+section#newsletter-section > form > input[type = "submit"] {
+    margin: 0.25em;
+    padding: 0.2em 0.35em;
+}
+
+section#newsletter-section > form > input[type = "email"] {
+    margin: 0.25em;
+    width: 80%;
+}
+
+/*----Design and Typography ----
+------------------------------*/
+
+/* Welcome Section */
+.welcome-bg {
+    background: #162C2D url(../images/landing/welcome-bg.png) repeat;
+}
+
+section#welcome-section {
+    color: white;
+    letter-spacing: 0.125rem;
+}
+
+section#welcome-section > h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+section#welcome-section > h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+section#welcome-section > a {
+    background-color: rgba(231, 218, 200, 0.3);
+    color: white;
+    background-clip: padding-box;
+    border: 10px solid rgba(231, 218, 200, 0.3);
+    border-radius: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-decoration: none;
+    position: relative; /* Used for moving underline animation */
+}
+
+section#welcome-section > a::before {
+    background-color: white;
+}
+
+span.white-border-bot {
+    border-bottom: 2px solid white;
+}
+
+/* About Section */
+.about-bg {
+    background-color: #4E5854;
+}
+
+section#about-section > div#about-text {
+    background-color: #D8D8D8;
+}
+
+section#about-section > div#about-text > h2 {
+    color: black;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+section#about-section > div#about-text > p {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+a.highlight-animation {
+    /* Inset is used to specify that the box-shadow is being created within the element itself, 
+    and not outside. */
+    box-shadow: inset 0 0 0 0 #4E5854;
+    color: #1C3434;
+    text-decoration: none;
+    padding: 0 0.1em;       /* Some padding is added so the highlight stretches slightly beyond the text. */
+    border-bottom: 0.1em solid #4E5854;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out, border-bottom .2s ease-in-out;
+}
+
+a.highlight-animation:hover {
+    border-bottom: 0em solid #1C3434;
+    box-shadow: inset 200px 0 0 0 #4E5854;
+    color: white;
+}
+
+section#about-section > div#about-text a#about-anchor {
+    color: #1C3434;
+    text-decoration: none;
+    position: relative;  /* Used for moving underline animation */
+}
+
+section#about-section > div#about-text a#about-anchor::before {
+    background-color: #1C3434;
+}
+
+/* Newsletter Section */
+.newsletter-bg {
+    background-color: #E3DFDF;
+}
+
+section#newsletter-section > h2 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+}
+
+section#newsletter-section > form {
+    font-size: 2.25rem;
+    color: black;
+    text-align: center;
+}
+
+section#newsletter-section > form input[type = "submit"] {
+    font-size: 2.25rem;
+    background-color: #4E5854;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+section#newsletter-section > form input[type = "submit"]:hover {
+    background-color: black;
+   
+}
+
+section#newsletter-section > form input[type = "email"] {
+    font-size: 1.75rem;
+}
+
+/* Footer */
+footer li {
+    font-weight: 300;
+}
+
+
+/*---- Responsive Design ------
+------------------------------*/
+@media (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+
+    section#about-section, section#newsletter-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#about-section div#about-text, section#about-section img,
+    section#newsletter-section > h2, section#newsletter-section > form {
+        margin: 0.5em auto;
+    }
+
+    section#about-section div#about-text, section#newsletter-section > form {
+        width: 60%;
+    }
+
+    section#about-section img, section#newsletter-section > h2 {
+        width: 65%;
+    }
+
+    section#newsletter-section > h2 {
+        font-size: 2.5rem;
+    }
+}

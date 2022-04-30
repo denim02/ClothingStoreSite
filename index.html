@@ -1,0 +1,89 @@
+<!-- File Name: index.html -->
+<!-- Programmed by Deni Mastori -->
+<!-- The images used in this website were obtained through unsplash.com. All
+    rights go to their respective owners. -->
+<!-- This website was tested in Google Chrome on a 1920x1080 display,
+    therefore it is recommended to preview it using this set-up. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ironclad Landing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link href = "css/general.css" type = "text/css" rel = "stylesheet">
+        <link href = "css/index.css" type = "text/css" rel = "stylesheet">
+        <script src = "js/index.js" type = "text/javascript"></script>
+    </head>
+
+    <body>
+        <div id = "wrapper">
+            <div class = "section-container header-bg"> 
+                <header class = "max-w">
+                    <!-- Header Section -->
+                    <h1>Ironcl&#x00E5;d</h1> 
+                    <div id = "gender-choice">
+                        <a id = "men-anchor" class = "current-choice" href = "javascript:changeToM()">Men</a>
+                        <a id = "women-anchor" class = "" href = "javascript:changeToF()">Women</a>
+                    </div>
+                </header>
+            </div>
+            <main>
+                <div class = "section-container welcome-bg">
+                    <section class = "max-w" id = "welcome-section">
+                        <!-- Welcome Section -->
+                        <h1>Welcome<br/>to<br/><span class = "white-border-bot">Ironcl&#x00E5;d</span></h1>
+                        <h2>Fashion at a discount</h2>
+                        <img src = "images/landing/Arrow.png" alt = "Arrow" />
+                        <a class = "moving-underline" id = "store-anchor" href = "store_men.html">Go to our store</a>
+                    </section>
+                </div>
+                <div class = "section-container about-bg">
+                    <section class = "max-w"  id = "about-section">
+                        <div id = "about-text">
+                            <!-- About Us Section -->
+                            <h2>Who are <a class = "highlight-animation" href = "about_us.html">we</a>?</h2>
+                            <p>
+                                Our company was founded back in 1964 as a small tailor with one single mission — to provide affordable and fashionable clothing to all. Since then, we have expanded into dozens of countries and clothed millions with only the finest of garments. We also pride ourselves on our ethics and sustainability by using only ethically sourced materials.
+                                <br /><b>For more info, check out our <a id = "about-anchor" class = "moving-underline" href = "about_us.html">About Us</a> section!</b>
+                            </p>
+                        </div>
+                        <img src = "images/landing/tailor.png" alt = "Image of sewing table" />
+                    </section>
+                </div>
+                <div class = "section-container newsletter-bg">
+                    <section class = "max-w" id = "newsletter-section">
+                        <!-- Newsletter Section -->
+                        <h2>Subscribe to our Newsletter!</h2>
+                        <form method = "post">
+                            <label for = "email">Your Email</label>
+                            <br />
+                            <input type = "email" id = "email" name = "email" required>
+                            <br />
+                            <input type = "submit" value = "Send">
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <div class = "section-container footer-bg"> 
+                <footer class = "max-w">
+                    <!-- Footer Section -->
+                    <div id = "nav-section">
+                        <h2>Visit our Sites</h2>
+                        <nav>
+                            <ul>
+                                <li><a class = "moving-underline" href = "index.html">Landing Site</a></li>
+                                <li><a class = "moving-underline" href = "store_women.html">Store for Women</a></li>
+                                <li><a class = "moving-underline" href = "store_men.html">Store for Men</a></li>
+                                <li><a class = "moving-underline" href = "about_us.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

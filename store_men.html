@@ -1,0 +1,293 @@
+<!-- File Name: store_men.html -->
+<!-- Programmed by Deni Mastori -->
+<!-- The images used in this website were obtained through unsplash.com. All
+    rights go to their respective owners. -->
+<!-- This website was tested in Google Chrome on a 1920x1080 display,
+    therefore it is recommended to preview it using this set-up. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Store For Men</title>
+        <link href = "css/general.css" type = "text/css" rel = "stylesheet">
+        <link href = "css/store.css" type = "text/css" rel = "stylesheet">
+        <script src = "js/store.js" type = "text/javascript"></script>
+    </head>
+
+    <body onload = "setDefaultTab()">
+        <div id = "wrapper">
+            <div class = "section-container header-bg"> 
+                <header class = "max-w">
+                    <!-- Header Section -->
+                    <h1>Ironcl&#x00E5;d</h1> 
+                    <div id = "gender-choice">
+                        <a id = "men-anchor" class = "current-choice" href = "store_men.html">Men</a>
+                        <a id = "women-anchor" class = "" href = "store_women.html">Women</a>
+                    </div>
+                    <h2><a class = "moving-underline" href = "index.html">Back to Landing Site</a></h2>
+                </header>
+            </div>
+            <main>
+                <div class = "section-container clothes-article-selection-bg">
+                    <section class = "max-w" id = "clothes-article-section">
+                        <!-- Clothing Category Section -->
+                        <div id = "category-selection">
+                            <a id = "sweaters-anchor" class = "tab-button current-choice moving-underline" href = "javascript:switchClothesType('sweaters-tab')">Sweaters</a>
+                            <a id = "hoodies-anchor" class = "tab-button moving-underline" href = "javascript:switchClothesType('hoodies-tab')">Hoodies</a>
+                            <a id = "jackets-anchor" class = "tab-button moving-underline" href = "javascript:switchClothesType('jackets-tab')">Jackets</a>
+                        </div>
+                    </section>
+                </div>
+                <div class = "section-container clothes-showcase-bg">
+                    <!-- Clothes Showcase Section -->
+                    <section class = "max-w" id = "showcase-section">
+                        <!-- SWEATERS TAB -->
+                        <div class = "tab" id = "sweaters-tab">
+                            <div class = "product-color-container">
+                                <div class = "product-container">
+                                    <img id = "sweater-large-img" data-default-img = "images/store/men/sweaters/color-1.png" src = "images/store/men/sweaters/color-1.png" alt = "Large sweater image" />
+                                    <div class = "product-description">
+                                        <h2>Woolen Sweater</h2>
+                                        <h3>$26.99</h3>
+                                        <p>
+                                            When snow covers the ground and the weather is chilly, what better to wear than a cozy and warm sweater. With a hand-knitted texture and an assortment of colors to choose from, make this gorgeous sweater yours.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "color-container">
+                                    <div class = "color">
+                                        <img src = "images/store/men/sweaters/color-1.png" data-associated-header = "sweater-color-h1" class = "opacity-change" alt = "sweater Color Variant" onmouseover="mouseOverImage(this, 'sweater-large-img')" onmouseout="mouseOutImage(this, 'sweater-large-img')" onclick="mouseClickImage(this, 'sweater-large-img')"/>
+                                        <h2 id = "sweater-color-h1" data-associated-img = "sweater-large-img" class = "color-header active">Dark Green</h2>
+                                    </div>
+                                    <div class = "color">
+                                        <img src = "images/store/men/sweaters/color-2.png" data-associated-header = "sweater-color-h2" class = "opacity-change" alt = "sweater Color Variant" onmouseover="mouseOverImage(this, 'sweater-large-img')" onmouseout="mouseOutImage(this, 'sweater-large-img')" onclick="mouseClickImage(this, 'sweater-large-img')"/>
+                                        <h2 id = "sweater-color-h2" data-associated-img = "sweater-large-img" class = "color-header">Red</h2>
+                                    </div>
+                                    <div class = "color">
+                                        <img src = "images/store/men/sweaters/color-3.png" data-associated-header = "sweater-color-h3" class = "opacity-change" alt = "sweater Color Variant" onmouseover="mouseOverImage(this, 'sweater-large-img')" onmouseout="mouseOutImage(this, 'sweater-large-img')" onclick="mouseClickImage(this, 'sweater-large-img')"/>
+                                        <h2 id = "sweater-color-h3" data-associated-img = "sweater-large-img" class = "color-header">Gray</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/sweaters/checkered-sweater.png" alt = "Image of checkered sweater" />
+                                <div class = "product-description">
+                                    <h2>Checkered Sweater</h2>
+                                    <h3>$32.99</h3>
+                                    <p>
+                                        While we all love a good comfortable sweater, most refrain from wearing them on more formal occassions. We say no more to this clothing restriction - enjoy comfortable attire anywhere, anytime with this fashionable checkered sweater.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "large-showcase-container">
+                                <img id = "sweater-showcase-img" src = "images/store/men/sweaters/large-color-1.png" data-default-img = "images/store/men/sweaters/large-color-1.png" alt = "Image of sweater" />
+                                <div class = "showcase-description">
+                                    <div class = "color-container">
+                                        <div class = "color">
+                                            <img src = "images/store/men/sweaters/large-color-1.png" data-associated-header = "sweater-showcase-color-h1" class = "opacity-change" alt = "sweater Color Variant" onmouseover="mouseOverImage(this, 'sweater-showcase-img')" onmouseout="mouseOutImage(this, 'sweater-showcase-img')" onclick="mouseClickImage(this, 'sweater-showcase-img')"/>
+                                            <h2 id = "sweater-showcase-color-h1" data-associated-img = "sweater-showcase-img" class = "color-header active">White</h2>
+                                        </div>
+                                        <div class = "color">
+                                            <img src = "images/store/men/sweaters/large-color-2.png" data-associated-header = "sweater-showcase-color-h2" class = "opacity-change" alt = "sweater Color Variant" onmouseover="mouseOverImage(this, 'sweater-showcase-img')" onmouseout="mouseOutImage(this, 'sweater-showcase-img')" onclick="mouseClickImage(this, 'sweater-showcase-img')"/>
+                                            <h2 id = "sweater-showcase-color-h2" data-associated-img = "sweater-showcase-img" class = "color-header">Beige</h2>
+                                        </div>
+                                        <div class = "color">
+                                            <img src = "images/store/men/sweaters/large-color-3.png" data-associated-header = "sweater-showcase-color-h3" class = "opacity-change" alt = "sweater Color Variant" onmouseover="mouseOverImage(this, 'sweater-showcase-img')" onmouseout="mouseOutImage(this, 'sweater-showcase-img')" onclick="mouseClickImage(this, 'sweater-showcase-img')"/>
+                                            <h2 id = "sweater-showcase-color-h3" data-associated-img = "sweater-showcase-img" class = "color-header">Maroon</h2>
+                                        </div>
+                                    </div>
+                                    <div class = "product-description">
+                                        <h2>Limited Edition Sweater</h2>
+                                        <h3>$49.99</h3>
+                                        <p>
+                                            As part of our special Winter Collection, we bring to you three special sweaters, handmade with Nordic Sheep wool and only the finest of cotton. With our three possible choices, you can move your body freely, keep warm, and dress to impress!
+                                            Since these sweaters are Limited Edition, you have until February 28th to make them yours.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HOODIES TAB -->
+                        <div class = "tab" id = "hoodies-tab">                 
+                            <div class = "large-showcase-container">
+                                <img id = "hoodie-showcase-img" src = "images/store/men/hoodies/large-color-1.png" data-default-img = "images/store/men/hoodies/large-color-1.png" alt = "Image of hoodie" />
+                                <div class = "showcase-description">
+                                    <div class = "color-container">
+                                        <div class = "color">
+                                            <img src = "images/store/men/hoodies/large-color-1.png" data-associated-header = "hoodie-showcase-color-h1" class = "opacity-change" alt = "hoodie Color Variant" onmouseover="mouseOverImage(this, 'hoodie-showcase-img')" onmouseout="mouseOutImage(this, 'hoodie-showcase-img')" onclick="mouseClickImage(this, 'hoodie-showcase-img')"/>
+                                            <h2 id = "hoodie-showcase-color-h1" data-associated-img = "hoodie-showcase-img" class = "color-header active">Black</h2>
+                                        </div>
+                                        <div class = "color">
+                                            <img src = "images/store/men/hoodies/large-color-2.png" data-associated-header = "hoodie-showcase-color-h2" class = "opacity-change" alt = "hoodie Color Variant" onmouseover="mouseOverImage(this, 'hoodie-showcase-img')" onmouseout="mouseOutImage(this, 'hoodie-showcase-img')" onclick="mouseClickImage(this, 'hoodie-showcase-img')"/>
+                                            <h2 id = "hoodie-showcase-color-h2" data-associated-img = "hoodie-showcase-img" class = "color-header">Light Brown</h2>
+                                        </div>
+                                        <div class = "color">
+                                            <img src = "images/store/men/hoodies/large-color-3.png" data-associated-header = "hoodie-showcase-color-h3" class = "opacity-change" alt = "hoodie Color Variant" onmouseover="mouseOverImage(this, 'hoodie-showcase-img')" onmouseout="mouseOutImage(this, 'hoodie-showcase-img')" onclick="mouseClickImage(this, 'hoodie-showcase-img')"/>
+                                            <h2 id = "hoodie-showcase-color-h3" data-associated-img = "hoodie-showcase-img" class = "color-header">Light Blue</h2>
+                                        </div>
+                                    </div>
+                                    <div class = "product-description">
+                                        <h2>Simple Colored Hoodie</h2>
+                                        <h3>$24.99</h3>
+                                        <p>
+                                            Sometimes what your wardrobe is lacking is just a simple hoodie to bring your outfit together. And to fill precisely that role, why not choose our great line-up of simple colored hoodies? 100% cotton and as soft as an alpaca's fur, you will not regret nabbing one of these for yourself. Pick black if you are feeling a little edgy, light blue for those summer vibes, or brown to have an interesting color you can fit into any outfit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/hoodies/white-hoodie.png" alt = "Image of white hoodie" />
+                                <div class = "product-description">
+                                    <h2>White Textured Hoodie</h2>
+                                    <h3>$29.99</h3>
+                                    <p>
+                                        Sweaters are great and all, but they lack one key component: a hood to protect your head from the frigid winter snow! That's exactly why you should have a look at our textured white hoodie. It'll keep you warm and make a fun plaything with its interesting texture all-in-one. If you're still not sure, just check out how nice it fits our model above!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/hoodies/brown-hoodie.png" alt = "Image of brown hoodie" />
+                                <div class = "product-description">
+                                    <h2>Brown Print Hoodie</h2>
+                                    <h3>$19.99</h3>
+                                    <p>
+                                        Well, simple hoodies are nice and easy to combo with other clothes, but sometimes you want a hoodie that has a little more "oomph". Our print hoodies will fill that hole in your wardrobe! With a nice fall brown color and quirky print in the middle (which also makes a great converstion-starter), what's there not to like? Hurry and pick one up now!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/hoodies/red-hoodie.png" alt = "Image of red hoodie" />
+                                <div class = "product-description">
+                                    <h2>Red &ldquo;Believe&rdquo; Hoodie</h2>
+                                    <h3>$34.89</h3>
+                                    <p>
+                                        For all our fellow "red" lovers out there, we bring our newest creation: the red "believe" hoodie. Vibrant and fun, it would a great addition to your hoodie collection.
+                                        Not to mention exactly how comfortable it is! Also, if you're ever in need of some moral support, you can just read the inspirational quote written right along your chest. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- JACKETS TAB -->
+                        <div class = "tab" id = "jackets-tab">
+                            <div class = "product-container">
+                                <img src = "images/store/men/jackets/leather-jacket.png" alt = "Image of leather jacket" />
+                                <div class = "product-description">
+                                    <h2>Leather Jacket</h2>
+                                    <h3>$59.50</h3>
+                                    <p>
+                                        What better jacket to wear on a cold day than this leather jacket, protecting you from the rain, cold, and from looking unfashionable! With its unique design and glossy look, you will definitely turn heads when walking down the street. Leather it up and get this jacket.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/jackets/brown-jacket.png" alt = "Image of brown jacket" />
+                                <div class = "product-description">
+                                    <h2>Brown Jacket</h2>
+                                    <h3>$39.50</h3>
+                                    <p>
+                                        For a more casual feel, come and pick up our brown jacket! Sporty and light, it's quite easy to pair it with any outfit! Wear it over a hoodie, t-shirt or anything else!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/jackets/northface-jacket.png" alt = "Image of North Face jacket" />
+                                <div class = "product-description">
+                                    <h2>NorthFace Jacket</h2>
+                                    <h3>$70.20</h3>
+                                    <p>
+                                        Look snazzy and show off to your friends with this limited edition "North Face" jacket, part of our collaboration with the famous clothing and apparel company. Although admittedly pricier than our other options, the impecable quality and stylish desing do make up for those extra dollars you might drop.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "product-container">
+                                <img src = "images/store/men/jackets/heavyduty-jacket.png" alt = "Image of waterproof heavy-duty jacket" />
+                                <div class = "product-description">
+                                    <h2>Heavy-duty Jacket</h2>
+                                    <h3>$79.50</h3>
+                                    <p>
+                                        If you live in a rainforest or just in a country with rough weather, you'll 100% need a good jacket to keep yourself dry and warm. Try our newest waterproof and heavy-duty jacket! It's covered in a unique waxy substance that will ensure no droplet of water seeps through. Despite this, it's also very easy to clean.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "product-color-container">
+                                <div class = "product-container">
+                                    <img id = "jacket-large-img" data-default-img = "images/store/men/jackets/color-1.png" src = "images/store/men/jackets/color-1.png" alt = "Large jacket image" />
+                                    <div class = "product-description">
+                                        <h2>Fur-lined Jacket</h2>
+                                        <h3>$39.50</h3>
+                                        <p>
+                                            Combine fashion, comfort and warmth with these fur-lined jackets. They'll keep you warm without making you look bulky and, to top that, you'll look great in all their colours. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "color-container">
+                                    <div class = "color">
+                                        <img src = "images/store/men/jackets/color-1.png" data-associated-header = "jacket-color-h1" class = "opacity-change" alt = "jacket Color Variant" onmouseover="mouseOverImage(this, 'jacket-large-img')" onmouseout="mouseOutImage(this, 'jacket-large-img')" onclick="mouseClickImage(this, 'jacket-large-img')"/>
+                                        <h2 id = "jacket-color-h1" data-associated-img = "jacket-large-img" class = "color-header active">Green</h2>
+                                    </div>
+                                    <div class = "color">
+                                        <img src = "images/store/men/jackets/color-2.png" data-associated-header = "jacket-color-h2" class = "opacity-change" alt = "jacket Color Variant" onmouseover="mouseOverImage(this, 'jacket-large-img')" onmouseout="mouseOutImage(this, 'jacket-large-img')" onclick="mouseClickImage(this, 'jacket-large-img')"/>
+                                        <h2 id = "jacket-color-h2" data-associated-img = "jacket-large-img" class = "color-header">Denim</h2>
+                                    </div>
+                                    <div class = "color">
+                                        <img src = "images/store/men/jackets/color-3.png" data-associated-header = "jacket-color-h3" class = "opacity-change" alt = "jacket Color Variant" onmouseover="mouseOverImage(this, 'jacket-large-img')" onmouseout="mouseOutImage(this, 'jacket-large-img')" onclick="mouseClickImage(this, 'jacket-large-img')"/>
+                                        <h2 id = "jacket-color-h3" data-associated-img = "jacket-large-img" class = "color-header">Brown</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "large-showcase-container">
+                                <img id = "jacket-showcase-img" src = "images/store/men/jackets/large-color-1.png" data-default-img = "images/store/men/jackets/large-color-1.png" alt = "Image of jacket" />
+                                <div class = "showcase-description">
+                                    <div class = "color-container">
+                                        <div class = "color">
+                                            <img src = "images/store/men/jackets/large-color-1.png" data-associated-header = "jacket-showcase-color-h1" class = "opacity-change" alt = "jacket Color Variant" onmouseover="mouseOverImage(this, 'jacket-showcase-img')" onmouseout="mouseOutImage(this, 'jacket-showcase-img')" onclick="mouseClickImage(this, 'jacket-showcase-img')"/>
+                                            <h2 id = "jacket-showcase-color-h1" data-associated-img = "jacket-showcase-img" class = "color-header active">Blue</h2>
+                                        </div>
+                                        <div class = "color">
+                                            <img src = "images/store/men/jackets/large-color-2.png" data-associated-header = "jacket-showcase-color-h2" class = "opacity-change" alt = "jacket Color Variant" onmouseover="mouseOverImage(this, 'jacket-showcase-img')" onmouseout="mouseOutImage(this, 'jacket-showcase-img')" onclick="mouseClickImage(this, 'jacket-showcase-img')"/>
+                                            <h2 id = "jacket-showcase-color-h2" data-associated-img = "jacket-showcase-img" class = "color-header">Light Blue</h2>
+                                        </div>
+                                        <div class = "color">
+                                            <img src = "images/store/men/jackets/large-color-3.png" data-associated-header = "jacket-showcase-color-h3" class = "opacity-change" alt = "jacket Color Variant" onmouseover="mouseOverImage(this, 'jacket-showcase-img')" onmouseout="mouseOutImage(this, 'jacket-showcase-img')" onclick="mouseClickImage(this, 'jacket-showcase-img')"/>
+                                            <h2 id = "jacket-showcase-color-h3" data-associated-img = "jacket-showcase-img" class = "color-header">Black</h2>
+                                        </div>
+                                    </div>
+                                    <div class = "product-description">
+                                        <h2>Denim Jacket</h2>
+                                        <h3>$29.50</h3>
+                                        <p>
+                                            What's cooler than a good denim jacket! Whether you're a skater kid or just someone trying to stand out and stand on the center stage of any social occasion, come pick up one of our denim jackets. You can choose between blue, light blue, or black depending on what clothes you want to pair with them, but we guarantee that all variants will be ultra comfortable and will fit you perfectly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main> 
+            <div class = "section-container footer-bg"> 
+                <footer class = "max-w">
+                    <!-- Footer Section -->
+                    <div id = "nav-section">
+                        <h2>Visit our Sites</h2>
+                        <nav>
+                            <ul>
+                                <li><a class = "moving-underline" href = "index.html">Landing Site</a></li>
+                                <li><a class = "moving-underline" href = "store_women.html">Store for Women</a></li>
+                                <li><a class = "moving-underline" href = "store_men.html">Store for Men</a></li>
+                                <li><a class = "moving-underline" href = "about_us.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <form>
+                        <label for = "email">Subscribe to our Newsletter</label>
+                        <input type = "email" id = "email" name = "email" required>
+                        <input type = "submit" class = "moving-underline" value = "Send">
+                    </form>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
